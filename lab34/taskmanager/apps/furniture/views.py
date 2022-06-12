@@ -2,7 +2,7 @@ from django.http import HttpResponse
 
 
 def index(request):  # HttpRequest
-    return HttpResponse("Страница мебели.")
+    return HttpResponse("Страница мебели")
 
 
 def categories(request):
