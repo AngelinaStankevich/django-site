@@ -14,9 +14,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from apps.furniture.views import index
+from furniture.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('furniture/', index)
+    path('furniture/', index),
+    path('cats/', categories),
 ]
