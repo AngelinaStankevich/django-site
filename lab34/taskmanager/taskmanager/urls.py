@@ -16,10 +16,9 @@ from django.contrib import admin
 from django.urls import path
 
 from apps.furniture.views import *
+from django.urls import path ,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('furniture/', index),
-    path('', index),
-    path('cats/', categories),
+    path('furniture/', include('furniture.urls')),
 ]
