@@ -4,7 +4,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-p_qwert36o^j"
+SECRET_KEY = 'django-insecure-p_qwert36o^j'
 
 DEBUG = True
 
@@ -36,7 +36,7 @@ ROOT_URLCONF = 'taskmanager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        "DIRS": [BASE_DIR / "templates"],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -53,13 +53,13 @@ WSGI_APPLICATION = 'taskmanager.wsgi.application'
 
 
 DATABASES = {
-    "default": {
-        "ENGINE": os.environ.get("DATABASE_ENGINE"),
-        "NAME": os.environ.get("PG_DB"),
-        "USER": os.environ.get("PG_USER"),
-        "PASSWORD": os.environ.get("PG_PASS"),
-        "HOST": os.environ.get("PG_HOST"),
-        "PORT": os.environ.get("PG_PORT"),
+    'default': {
+        'ENGINE': os.environ.get("DATABASE_ENGINE"),
+        'NAME': os.environ.get("PG_DB"),
+        'USER': os.environ.get("PG_USER"),
+        'PASSWORD': os.environ.get("PG_PASS"),
+        'HOST': os.environ.get("PG_HOST"),
+        'PORT': os.environ.get("PG_PORT"),
     }
 }
 
